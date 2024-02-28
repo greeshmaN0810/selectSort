@@ -1,4 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/*
+Author: Greeshma Namana
+Date: 02/28/2024
+Comments: This C# Console Application code demonstrates the
+   Selection Sort. 
+*/
 int[] selection_sort_numbers = { 5,72,3,14,7,1};
 Console.WriteLine("Here is the original array that will be used to execute the Selection Sort Algorithm: ");
 for (int i = 0; i < selection_sort_numbers.Length; i++)
@@ -12,19 +17,19 @@ Console.WriteLine("");
 
 static void Selection_Sort(int[] ss_arr)
 {
-    // min_position is used to keep track of the element position with the current lowest value
+    // min_position is being used here to keep track of lowest number 
     int min_position;
-    // temp is used to conduct the swap during during the Selection Sort Algorithm
+    // temp is used for swapping 
     int temp;
 
     for (int i = 0; i < ss_arr.Length; i++)
     {
-        // Here we initialize the min_position to the current index of array
+        // initialize the min position
         min_position = i;
-        // From the min_position, check to see if the next element is smaller
+        // checking if the next element is smaller 
         for (int x = i + 1; x < ss_arr.Length; x++)
         {
-            // If the next element from the current min_position is smaller, then make that the new min_position
+            //if smaller, make the min number the new min
             if (ss_arr[x] < ss_arr[min_position])
             {
                 //min_position will keep track of the index that min is in, this is needed when a swap happens
